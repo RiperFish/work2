@@ -25,3 +25,21 @@ function aideUnselectItem() {
 }
 asideListItems.forEach(item => item.addEventListener('click', aideSelectListItem));
 // ASIDE NAVIGATION END
+
+
+// hamburger
+const hamburger = document.querySelector('.header__humbergermenu');
+const menu = document.querySelector('.header__menu');
+const close_ham = document.querySelector('.close__ham');
+const menu_items = document.querySelectorAll('.header__menu-item');
+const body = document.querySelector('body');
+
+hamburger.addEventListener('click',()=> {
+    menu.classList.toggle("header__menu-open");
+    body.classList.toggle("noscroll");
+});
+
+close_ham.addEventListener('click',()=> {
+    menu.classList.remove("header__menu-open");
+    body.classList.remove("noscroll");
+});

@@ -16,17 +16,24 @@
         <div class="header">
             <div class="container">
                 <div class="header__top">
-                    <a href="" class="logo"><img src="img/logo.svg" alt="" srcset=""></a>
+                    <a href="#" class="header__humbergermenu"><img class="humbergermenu" src="img/menu.png" alt=""></a>
+                    <a href="#" class="logo"><img class="logo__img" src="img/logo.svg" alt="" srcset=""></a>
                     <div class="header__top-search">
                         <input type="text" class="search__input" placeholder="Search for goods">
-                        <a class="search__btn">
+                        <a class="search__btn" href="#">
                             <img src="img/search.svg" alt="" srcset="">
                         </a>
                     </div>
                     <ul class="header__top-list">
-                        <li><a href="">Sign In</a></li>
-                        <li><a class="list__cart" href="">Cart <img src="img/shopping-cart 1.svg" alt="" srcset="">
+                        <li class="header__search"><a href="#"><img class="search__icon" src="img/search.png" alt=""></a></li>
+
+                        <li class="header__signin"><a href=""><span class="signin__text">Sign In</span> <img
+                                    class="signin__icon" src="img/login.png" alt=""></a></li>
+
+                        <li class="header__cart"><a class="list__cart" href=""> <span class="cart__text">Cart</span><img
+                                    class="cart__icon" src="img/shopping-cart 1.svg" alt="" srcset="">
                             </a></li>
+
                     </ul>
                 </div>
             </div>
@@ -42,6 +49,7 @@
                         <li class="header__menu-item"><a href="#">Blog</a></li>
                         <li class="header__menu-item"><a href="#">Best Buys</a></li>
                         <li class="header__menu-item"><a href="#">Contacts</a></li>
+                        <li class="header__menu-item close-menu"><a class="close__ham" href="#">X</a></li>
                     </ul>
                 </div>
 
@@ -55,31 +63,36 @@
                     <div class="hero__aside-list">
                         <ul class="list__items">
                             <li class="list__items-item item__selected"><a href="#"
-                                    class="item__link item__selected-link"> <img src="img/aside-icons/Pet.svg" alt=""
-                                        srcset=""> <span>Pet products</span></a></li>
-                            <li class="list__items-item"><a class="item__link" href="#"> <img
-                                        src="img/aside-icons/Electronics.svg" alt="" srcset=""><span>Electronics</span>
+                                    class="item__link item__selected-link"> <img class="hero__aside-img"
+                                        src="img/aside-icons/Pet.svg" alt="" srcset="">
+                                    <span class="item__title">Pet products</span></a></li>
+                            <li class="list__items-item"><a class="item__link" href="#"> <img class="hero__aside-img"
+                                        src="img/aside-icons/Electronics.svg" alt="" srcset="">
+                                    <span class="item__title">Electronics</span>
                                 </a></li>
-                            <li class="list__items-item"><a class="item__link" href="#"> <img
-                                        src="img/aside-icons/Communication.svg" alt="" srcset=""><span>Communication
-                                        products</span></a></li>
-                            <li class="list__items-item"><a class="item__link" href="#"> <img
-                                        src="img/aside-icons/Social.svg" alt="" srcset=""><span>Sociale networks
-                                        software</span></a></li>
-                            <li class="list__items-item"><a class="item__link" href="#"> <img
-                                        src="img/aside-icons/printer.svg" alt="" srcset=""><span>Printers</span></a>
+                            <li class="list__items-item"><a class="item__link" href="#"> <img class="hero__aside-img"
+                                        src="img/aside-icons/Communication.svg" alt="" srcset="">
+                                    <span class="item__title wrap-it">Communication products</span></a></li>
+                            <li class="list__items-item"><a class="item__link" href="#"> <img class="hero__aside-img"
+                                        src="img/aside-icons/Social.svg" alt="" srcset="">
+                                    <span class="item__title wrap-it">Sociale networks software</span></a></li>
+                            <li class="list__items-item"><a class="item__link" href="#"> <img class="hero__aside-img"
+                                        src="img/aside-icons/printer.svg" alt="" srcset />
+                                    <span class="item__title">Printers</span></a>
                             </li>
-                            <li class="list__items-item"><a class="item__link" href="#"> <img
-                                        src="img/aside-icons/Audio.svg" alt="" srcset=""><span>Audio content</span></a>
+                            <li class="list__items-item"><a class="item__link" href="#"> <img class="hero__aside-img"
+                                        src="img/aside-icons/Audio.svg" alt="" srcset="">
+                                    <span class="item__title">Audio content</span></a>
                             </li>
-                            <li class="list__items-item"><a class="item__link" href="#"> <img
-                                        src="img/aside-icons/Favs.svg" alt="" srcset=""><span>Our
-                                        favorite items</span></a></li>
-                            <li class="list__items-item"><a class="item__link" href="#"> <img
-                                        src="img/aside-icons/User.svg" alt="" srcset=""><span>User selected
-                                        goods</span></a></li>
-                            <li class="list__items-item"><a class="item__link" href="#"> <img
-                                        src="img/aside-icons/Paper.svg" alt="" srcset=""><span>Paper planes</span></a>
+                            <li class="list__items-item"><a class="item__link" href="#"> <img class="hero__aside-img"
+                                        src="img/aside-icons/Favs.svg" alt="" srcset="">
+                                    <span class="item__title">Our favorite items</span></a></li>
+                            <li class="list__items-item"><a class="item__link" href="#"> <img class="hero__aside-img"
+                                        src="img/aside-icons/User.svg" alt="" srcset="">
+                                    <span class="item__title">User selected goods</span></a></li>
+                            <li class="list__items-item"><a class="item__link" href="#"> <img class="hero__aside-img"
+                                        src="img/aside-icons/Paper.svg" alt="" srcset=""><span class="item__title">Paper
+                                        planes</span></a>
                             </li>
                         </ul>
                     </div>
@@ -88,14 +101,14 @@
                             <div class="item current">
                                 <img src="img/h-img/img-1.jpg" alt="" srcset="">
                                 <div class="content">
-                                    <h1>Our best product goes here 1</h1>
+                                    <h1 class="content__best">Our best product goes here 1</h1>
                                     <a href="" class="h-btn">Buy now</a>
                                 </div>
                             </div>
                             <div class="item ">
                                 <img src="img/h-img/img-2.jpg" alt="" srcset="">
                                 <div class="content">
-                                    <h1>Our best product goes here 2</h1>
+                                    <h1 class="content__best">Our best product goes here 2</h1>
                                     <a href="" class="h-btn">Buy now</a>
                                 </div>
 
@@ -104,7 +117,76 @@
                             <div class="item">
                                 <img src="img/h-img/img-3.jpg" alt="" srcset="">
                                 <div class="content">
-                                    <h1>Our best product goes here 3</h1>
+                                    <h1 class="content__best">Our best product goes here 3</h1>
+                                    <a href="" class="h-btn">Buy now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel__mobile">
+                            <div class="item current">
+                                <img src="img/h-img/img-1.jpg" alt="" srcset="">
+                                <div class="content">
+                                    <h1 class="content__best">Our best product goes here 1</h1>
+                                    <a href="" class="h-btn">Buy now</a>
+                                </div>
+                            </div>
+                            <div class="item ">
+                                <img src="img/h-img/img-2.jpg" alt="" srcset="">
+                                <div class="content">
+                                    <h1 class="content__best">Our best product goes here 2</h1>
+                                    <a href="" class="h-btn">Buy now</a>
+                                </div>
+
+                            </div>
+
+                            <div class="item">
+                                <img src="img/h-img/img-3.jpg" alt="" srcset="">
+                                <div class="content">
+                                    <h1 class="content__best">Our best product goes here 3</h1>
+                                    <a href="" class="h-btn">Buy now</a>
+                                </div>
+                            </div><div class="item current">
+                                <img src="img/h-img/img-1.jpg" alt="" srcset="">
+                                <div class="content">
+                                    <h1 class="content__best">Our best product goes here 4</h1>
+                                    <a href="" class="h-btn">Buy now</a>
+                                </div>
+                            </div>
+                            <div class="item ">
+                                <img src="img/h-img/img-2.jpg" alt="" srcset="">
+                                <div class="content">
+                                    <h1 class="content__best">Our best product goes here 5</h1>
+                                    <a href="" class="h-btn">Buy now</a>
+                                </div>
+
+                            </div>
+
+                            <div class="item">
+                                <img src="img/h-img/img-3.jpg" alt="" srcset="">
+                                <div class="content">
+                                    <h1 class="content__best">Our best product goes here 6</h1>
+                                    <a href="" class="h-btn">Buy now</a>
+                                </div>
+                            </div><div class="item current">
+                                <img src="img/h-img/img-1.jpg" alt="" srcset="">
+                                <div class="content">
+                                    <h1 class="content__best">Our best product goes here 7</h1>
+                                    <a href="" class="h-btn">Buy now</a>
+                                </div>
+                            </div>
+                            <div class="item ">
+                                <img src="img/h-img/img-2.jpg" alt="" srcset="">
+                                <div class="content">
+                                    <h1 class="content__best">Our best product goes here 8</h1>
+                                    <a href="" class="h-btn">Buy now</a>
+                                </div>
+
+                            </div>
+
+                            <div class="item">
+                                <img src="img/h-img/img-3.jpg" alt="" srcset="">
+                                <div class="content">
+                                    <h1 class="content__best">Our best product goes here 9</h1>
                                     <a href="" class="h-btn">Buy now</a>
                                 </div>
                             </div>
@@ -730,16 +812,18 @@
         <div class="footer__nav-container">
             <div class="container">
                 <div class="f-nav">
-                    
+
                     <ul class="footer__list">
-                        <li class="footer__list-item copyright"> <p class=""> Just another template 2020, no rights reserved so far.</p></li>
+                        <li class="footer__list-item copyright">
+                            <p class=""> Just another template 2020, no rights reserved so far.</p>
+                        </li>
                         <li class="footer__list-item"><a class="footer__list-link" href="">FAQ</a></li>
                         <li class="footer__list-item"><a class="footer__list-link" href="">Legal issues</a></li>
                         <li class="footer__list-item"><a class="footer__list-link" href="">Privacy policy</a></li>
                     </ul>
                 </div>
             </div>
-            
+
         </div>
 
 
