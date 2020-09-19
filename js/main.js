@@ -43,3 +43,12 @@ close_ham.addEventListener('click',()=> {
     menu.classList.remove("header__menu-open");
     body.classList.remove("noscroll");
 });
+
+//
+
+const search__icon = document.querySelector('.search__icon');
+const header__top_search = document.querySelector('.header__top-search');
+search__icon.addEventListener('click',()=> {
+    header__top_search.classList.toggle("show_search-bar");
+    console.log("t")
+});
