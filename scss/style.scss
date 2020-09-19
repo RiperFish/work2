@@ -74,6 +74,17 @@ a {
             left: -4px;
         }
     }
+    .search__close{
+        position: absolute;
+        right: 65px;
+        
+        height: 100%;
+        display: flex;
+        align-items: center;
+        color: rgba(0, 0, 0, 0.404);
+        font-weight: normal;
+    }
+
     .header__top-list {
         width: 166px;
         display: flex;
@@ -608,7 +619,7 @@ a {
 }
 @media (max-width: 1229px) {
     .search__input {
-        background-color: yellow;
+        //background-color: yellow;
         //padding: 0px 0 0px 22px;
     }
     .hero {
@@ -626,7 +637,7 @@ a {
 }
 @media (max-width: 991px) {
     .search__input {
-        background-color: green;
+        //background-color: green;
         //padding: 0px 0 0px 22px;
     }
 
@@ -669,7 +680,7 @@ a {
 
 @media (max-width: 767px) {
     .search__input {
-        background-color: red;
+        //background-color: red;
         padding: 0px 0 0px 22px;
     }
 
@@ -685,7 +696,6 @@ a {
         .header__top-list {
             //justify-content: space-around;
             .signin__icon,
-            .search__icon,
             .cart__icon {
                 display: inline-block;
                 width: 26px;
@@ -815,19 +825,30 @@ a {
     .header {
          .header__top-search {
             display: none;
-        }/*
+            //top: -65px;
+        }
         .show_search-bar{
             display: inline-flex;
             top: 0;
-            visibility: visible;
-            z-index: 1;
-        } */
+            transition: 0.5s ease-in-out;
+           // visibility: visible;
+           
+        } 
+       
         .header__top-list {
-
-            .header__search {
+            .header__search{
                 display: inline-block;
+                
+            }
+            .search__icon {
+                display: inline-block;
+                width: 26px;
+            }
+            .hide_search-icon{
+                display: none;
             }
         }
+        
         .header__menu {
             width: 50%;
             left: -50%;

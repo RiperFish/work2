@@ -48,7 +48,12 @@ close_ham.addEventListener('click',()=> {
 
 const search__icon = document.querySelector('.search__icon');
 const header__top_search = document.querySelector('.header__top-search');
+const search__close = document.querySelector('.search__close');
 search__icon.addEventListener('click',()=> {
     header__top_search.classList.toggle("show_search-bar");
-    console.log("t")
+    search__icon.classList.toggle("hide_search-icon");
+});
+search__close.addEventListener('click',()=> {
+    header__top_search.classList.remove("show_search-bar");
+    search__icon.classList.remove("hide_search-icon");
 });
