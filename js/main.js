@@ -44,8 +44,8 @@ close_ham.addEventListener('click',()=> {
     body.classList.remove("noscroll");
 });
 
-//
 
+// search bar manipulation : max-width 767px
 const search__icon = document.querySelector('.search__icon');
 const header__top_search = document.querySelector('.header__top-search');
 const header__search = document.querySelector('.header__search');
