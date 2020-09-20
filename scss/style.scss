@@ -52,11 +52,15 @@ a {
     .search__input {
         border-radius: 50px;
         padding: 9px 0 10px 22px;
-        border: 1px solid #d6d6d6;
+        border: 1px solid rgb(214, 214, 214);
         height: 47px;
         //width: 610px;
         width: 100%;
         font-size: 15px;
+        transition: .5s;
+        &:focus{
+            border: 1px solid #293576;
+        }
     }
     .search__btn {
         color: white;
@@ -69,20 +73,31 @@ a {
         border-radius: 0 25px 25px 0;
         width: 56px;
         height: 47px;
+        transition: .5s;
         img {
             position: relative;
             left: -4px;
+            transition: .5s;
+        }
+        &:hover{
+            border-radius: 25px;
+            width: 47px;
+            img{
+                left: 0;
+            }
         }
     }
     .search__close {
         position: absolute;
-        right: 65px;
-
-        height: 100%;
+        right: 68px;
         display: none;
         align-items: center;
         color: rgba(0, 0, 0, 0.404);
         font-weight: normal;
+        transition: .3s;
+        &:hover{
+            color: black;
+        }
     }
 
     .header__top-list {
@@ -90,14 +105,16 @@ a {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding-left: 10px;
     }
     .signin__icon {
         width: 34px;
         display: none;
     }
-    .signin__text,.cart__text{
-        transition: .5s;
-        &:hover{
+    .signin__text,
+    .cart__text {
+        transition: 0.5s;
+        &:hover {
             color: #3a3f58;
         }
     }
@@ -437,12 +454,11 @@ a {
         }
     }
 }
-.item__img{
-    transition: .4s;
-    &:hover{
+.item__img {
+    transition: 0.4s;
+    &:hover {
         box-shadow: 0px 1px 3px 0px #d0d0d0b3;
         //cursor: pointer;
-        
     }
 }
 .section__title {
@@ -699,14 +715,23 @@ a {
     .header {
         //display: none;
         .search__input {
-            height: auto;
+            height: 35px;
         }
         .search__btn {
-            height: 100%;
+            height: 35px;
+            width: 35px;
+            &:hover{
+                width: 35px;   
+            }
+            .search__btn-icon{
+                left: 0;
+                width: 15px;
+            }
         }
 
         .header__top-list {
             //justify-content: space-around;
+            padding-left: 30px;
             .signin__icon,
             .cart__icon {
                 display: inline-block;
@@ -717,7 +742,7 @@ a {
                 display: none;
             }
         }
-
+        
         .header__humbergermenu {
             display: inline-block;
         }
@@ -835,21 +860,43 @@ a {
 }
 @media (max-width: 688px) {
     .header {
-        .logo{
+        .logo {
             margin-right: auto;
+        }
+        .header__top {
+            position: unset;
         }
         .header__top-search {
             display: none;
+            width: 0;
             //top: -65px;
         }
+        .search__btn{
+            right: 25px;
+        }
+
         .show_search-bar {
-            display: inline-flex;
+            background-color: #eee;
+            box-shadow: 0px 1px 3px rgb(163, 163, 163);
+            border: 1px solid white;
+            position: absolute;
             top: 0;
-            transition: 0.5s ease-in-out;
+            left: 0px;right: 0;
+            width: 100%;
+            height: 80px;
+            padding: 0 25px;
+            display: flex;
+            align-items: center;
+            z-index: 10;
+            transition: .5s;
             // visibility: visible;
+        }
+        .search__input{
+            border: 1px solid white;
         }
         .search__close {
             display: flex;
+            //right: 86px;
         }
         .header__top-list {
             .header__search {
@@ -878,20 +925,7 @@ a {
         }
     }
 }
-@media (max-width:545px){
-    .header{
-        .search__btn{
-            width: 35px;
-            .search__btn-icon{
-                width: 15px;
-                left: -2px;
-            }
-        }
-        .search__close{
-            right: 40px;
-        }
-    }
-}
+
 @media (max-width: 481px) {
     .header {
         .header__menu {
